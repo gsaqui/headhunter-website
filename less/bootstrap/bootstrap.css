@@ -3352,6 +3352,11 @@ a.thumbnail:hover {
 .clients {
   background-image: url(../../img/pencil2.jpg);
 }
+@media (max-width: 980px) {
+  .hero-unit {
+    background-image: none;
+  }
+}
 .pull-right {
   float: right;
 }
