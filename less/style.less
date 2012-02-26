@@ -1,18 +1,47 @@
-@import "bootstrap/bootstrap.less";
+@import "grid.less";
 
 body {
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 40px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-@import "bootstrap/responsive.less";
+
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+header h1{
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	width: 350px;
+}
 
 
-/* ===== Primary Styles ========================================================
-   Author:
-   ========================================================================== */
+.main{
+	background: #5A5A5A ;
+	background-image: -moz-radial-gradient(25% 30%, silver, black);
+	background-image: -ms-radial-gradient(25% 30%, silver, black);
+	background-image: -o-radial-gradient(25% 30%, silver, black);
+	background-image: -webkit-radial-gradient(25% 30%, silver, black);
+	background-image: radial-gradient(25% 30%, silver, black);
+	background-repeat: no-repeat;
+	position: relative;
+	float: left;
+}
 
 
+.left-column {
+   .column(3);
+}
+.center-column {
+   .column(6);
+}
+.right-column{
+	.column(3);
+}
 
 
 
