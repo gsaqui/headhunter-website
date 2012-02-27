@@ -15,6 +15,25 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+nav {
+  width: 960px;
+  height: 50px;
+  float: left;
+  background: -webkit-linear-gradient(90deg, #ffffff, #0000ff);
+  background: -moz-linear-gradient(90deg, #ffffff, #0000ff);
+  background: -o-linear-gradient(90deg, #ffffff, #0000ff);
+}
+ul.nav {
+  float: left;
+  display: block;
+  padding-top: .15em;
+  list-style: none;
+  width: 960px;
+}
+ul.nav li {
+  float: left;
+  display: inline;
+}
 header h1 {
   position: absolute;
   top: 40px;

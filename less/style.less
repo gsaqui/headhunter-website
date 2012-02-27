@@ -1,9 +1,11 @@
 @import "grid.less";
 
+@totalWidth: 960px;
+
 body {
   padding-top: 20px;
   padding-bottom: 40px;
-  max-width: 960px;
+  max-width: @totalWidth;
   margin: 0 auto;
 }
 
@@ -11,6 +13,28 @@ body {
 @columns: 12;
 @column-width: 60;
 @gutter-width: 20;
+
+nav{
+	width: @totalWidth;
+	height: 50px;
+	float: left;
+	background: -webkit-linear-gradient(90deg, white, blue);
+	background: -moz-linear-gradient(90deg, white, blue);
+	background: -o-linear-gradient(90deg, white, blue);
+	
+
+}
+ul.nav{
+	float: left;
+	display: block;
+	padding-top: .15em;
+	list-style: none;
+	width: @totalWidth;
+}
+ul.nav li{
+	float: left;
+	display: inline;
+}
 
 header h1{
 	position: absolute;
