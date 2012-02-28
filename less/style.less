@@ -1,11 +1,13 @@
 @import "grid.less";
+@import "header.less";
+
 
 @totalWidth: 960px;
 
 
 /*http://www.colourlovers.com/palette/443995/i_demand_a_pancake*/
 @backgroundColor: #E5FCC2;
-@textColor: #9DE0AD;
+@textColor: #1669a1;
 @midColor: #45ADA8;
 @lightGradient: black;
 @darkGradient: #594F4F;
@@ -14,6 +16,13 @@
 @columns: 12;
 @column-width: 60;
 @gutter-width: 20;
+
+@import "homepage-buttons.less";
+
+body{
+	width: @totalWidth;
+	margin: 0 auto;
+}
 
 h1{
 	color: @textColor;
@@ -54,13 +63,13 @@ header h1{
 
 
 .main{
-	background: @backgroundColor ;
-	background-image: -moz-radial-gradient(25% 30%, silver, @backgroundColor);
-	background-image: -ms-radial-gradient(25% 30%, silver, @backgroundColor);
-	background-image: -o-radial-gradient(25% 30%, silver, @backgroundColor);
-	background-image: -webkit-radial-gradient(25% 30%, silver, @backgroundColor);
-	background-image: radial-gradient(25% 30%, silver, @backgroundColor);
-	background-repeat: no-repeat;
+	xbackground: @backgroundColor ;
+	xbackground-image: -moz-radial-gradient(25% 30%, silver, @backgroundColor);
+	xbackground-image: -ms-radial-gradient(25% 30%, silver, @backgroundColor);
+	xbackground-image: -o-radial-gradient(25% 30%, silver, @backgroundColor);
+	xbackground-image: -webkit-radial-gradient(25% 30%, silver, @backgroundColor);
+	xbackground-image: radial-gradient(25% 30%, silver, @backgroundColor);
+	xbackground-repeat: no-repeat;
 	position: relative;
 	float: left;
 }

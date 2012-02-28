@@ -1,0 +1,64 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+.nav-boxes {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+  height: 200px;
+  color: pink;
+  background: red;
+  border: solid 4px;
+}
+.nav-boxes, .box_shadow {
+  -webkit-box-shadow: 0px 0px 12px 0px #000;
+  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+
+  -moz-box-shadow: 0px 0px 12px 0px #000;
+  /* FF3.5 - 3.6 */
+
+  box-shadow: 0px 0px 12px 0px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+
+}
+.nav-boxes, .box_round {
+  -webkit-border-radius: 12px;
+  /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+
+  -moz-border-radius: 12px;
+  /* FF1-3.6 */
+
+  border-radius: 12px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.about {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  border-right: 4px solid;
+  height: 200px;
+}
+.services {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  border-right: 4px solid;
+  height: 200px;
+}
