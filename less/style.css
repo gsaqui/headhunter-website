@@ -9,19 +9,18 @@ body:before, body:after {
 body:after {
   clear: both;
 }
-body {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  max-width: 960px;
-  margin: 0 auto;
+/*http://www.colourlovers.com/palette/443995/i_demand_a_pancake*/
+h1 {
+  color: #9de0ad;
 }
 nav {
   width: 960px;
   height: 50px;
   float: left;
-  background: -webkit-linear-gradient(90deg, #ffffff, #0000ff);
-  background: -moz-linear-gradient(90deg, #ffffff, #0000ff);
-  background: -o-linear-gradient(90deg, #ffffff, #0000ff);
+  background: #594f4f;
+  background: -webkit-linear-gradient(90deg, #594f4f, #000000);
+  background: -moz-linear-gradient(90deg, #594f4f, #000000);
+  background: -o-linear-gradient(90deg, #594f4f, #000000);
 }
 ul.nav {
   float: left;
@@ -33,6 +32,11 @@ ul.nav {
 ul.nav li {
   float: left;
   display: inline;
+  margin-right: 20px;
+}
+ul.nav a {
+  color: #9de0ad;
+  text-decoration: none;
 }
 header h1 {
   position: absolute;
@@ -41,15 +45,18 @@ header h1 {
   width: 350px;
 }
 .main {
-  background: #5A5A5A ;
-  background-image: -moz-radial-gradient(25% 30%, #c0c0c0, #000000);
-  background-image: -ms-radial-gradient(25% 30%, #c0c0c0, #000000);
-  background-image: -o-radial-gradient(25% 30%, #c0c0c0, #000000);
-  background-image: -webkit-radial-gradient(25% 30%, #c0c0c0, #000000);
-  background-image: radial-gradient(25% 30%, #c0c0c0, #000000);
+  background: #e5fcc2;
+  background-image: -moz-radial-gradient(25% 30%, #c0c0c0, #e5fcc2);
+  background-image: -ms-radial-gradient(25% 30%, #c0c0c0, #e5fcc2);
+  background-image: -o-radial-gradient(25% 30%, #c0c0c0, #e5fcc2);
+  background-image: -webkit-radial-gradient(25% 30%, #c0c0c0, #e5fcc2);
+  background-image: radial-gradient(25% 30%, #c0c0c0, #e5fcc2);
   background-repeat: no-repeat;
   position: relative;
   float: left;
+}
+.main h2, .main p {
+  color: black;
 }
 .left-column {
   display: inline;

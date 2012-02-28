@@ -99,8 +99,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #333333;
-  background-color: #000000;
+  color: #f2f0df;
+  background-color: #222222;
 }
 a {
   color: #0088cc;
@@ -297,7 +297,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: bold;
-  color: #333333;
+  color: #caccb6;
   text-rendering: optimizelegibility;
 }
 h1 small,
@@ -307,7 +307,7 @@ h4 small,
 h5 small,
 h6 small {
   font-weight: normal;
-  color: #999999;
+  color: #caccb6;
 }
 h1 {
   font-size: 30px;
@@ -3333,7 +3333,7 @@ a.thumbnail:hover {
   background-image: url(../../img/pencil.jpg);
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #f2f2f0;
+  background-color: #8e9e82;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;

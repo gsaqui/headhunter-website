@@ -2,27 +2,31 @@
 
 @totalWidth: 960px;
 
-body {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  max-width: @totalWidth;
-  margin: 0 auto;
-}
+
+/*http://www.colourlovers.com/palette/443995/i_demand_a_pancake*/
+@backgroundColor: #E5FCC2;
+@textColor: #9DE0AD;
+@midColor: #45ADA8;
+@lightGradient: black;
+@darkGradient: #594F4F;
 
 
 @columns: 12;
 @column-width: 60;
 @gutter-width: 20;
 
+h1{
+	color: @textColor;
+}
+
 nav{
 	width: @totalWidth;
 	height: 50px;
 	float: left;
-	background: -webkit-linear-gradient(90deg, white, blue);
-	background: -moz-linear-gradient(90deg, white, blue);
-	background: -o-linear-gradient(90deg, white, blue);
-	
-
+	background: @darkGradient;
+	background: -webkit-linear-gradient(90deg, @darkGradient, @lightGradient);
+	background: -moz-linear-gradient(90deg, @darkGradient, @lightGradient);
+	background: -o-linear-gradient(90deg, @darkGradient, @lightGradient);
 }
 ul.nav{
 	float: left;
@@ -34,6 +38,11 @@ ul.nav{
 ul.nav li{
 	float: left;
 	display: inline;
+	margin-right: 20px;
+}
+ul.nav a{
+	color: @textColor;
+	text-decoration: none;
 }
 
 header h1{
@@ -45,17 +54,21 @@ header h1{
 
 
 .main{
-	background: #5A5A5A ;
-	background-image: -moz-radial-gradient(25% 30%, silver, black);
-	background-image: -ms-radial-gradient(25% 30%, silver, black);
-	background-image: -o-radial-gradient(25% 30%, silver, black);
-	background-image: -webkit-radial-gradient(25% 30%, silver, black);
-	background-image: radial-gradient(25% 30%, silver, black);
+	background: @backgroundColor ;
+	background-image: -moz-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: -ms-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: -o-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: -webkit-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: radial-gradient(25% 30%, silver, @backgroundColor);
 	background-repeat: no-repeat;
 	position: relative;
 	float: left;
 }
 
+.main h2,
+.main p{
+	color: black;
+}
 
 .left-column {
    .column(3);
