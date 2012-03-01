@@ -14,19 +14,19 @@ body:after {
   float: left;
   width: 940px;
   margin: 0 10px;
-  height: 200px;
-  color: pink;
-  background: red;
+  height: 150px;
+  background: white;
   border: solid 4px;
+  border-color: #dedede;
 }
 .nav-boxes, .box_shadow {
-  -webkit-box-shadow: 0px 0px 12px 0px #000;
+  -webkit-box-shadow: 0px 0px 12px 0px #dedede;
   /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 
-  -moz-box-shadow: 0px 0px 12px 0px #000;
+  -moz-box-shadow: 0px 0px 12px 0px #dedede;
   /* FF3.5 - 3.6 */
 
-  box-shadow: 0px 0px 12px 0px #000;
+  box-shadow: 0px 0px 12px 0px #dedede;
   /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
 
 }
@@ -46,19 +46,27 @@ body:after {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.about {
-  display: inline;
-  float: left;
-  width: 300px;
-  margin: 0 10px;
-  border-right: 4px solid;
-  height: 200px;
+.nav-boxes {
+  position: relative;
 }
-.services {
+.nav-boxes .services, .nav-boxes .clients, .nav-boxes .about {
   display: inline;
   float: left;
   width: 300px;
   margin: 0 10px;
   border-right: 4px solid;
-  height: 200px;
+  height: 150px;
+  border-color: #dedede;
+}
+.nav-boxes .clients {
+  border: none;
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+.nav-boxes div {
+  position: absolute;
+  bottom: 20px;
+  color: blue;
 }

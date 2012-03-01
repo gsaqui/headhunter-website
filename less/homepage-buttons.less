@@ -1,19 +1,23 @@
 @import "grid.less";
 
 @columns: 12;
-@heightOfBox: 200px;
+@column-width: 60;
+@gutter-width: 20;
+
+@heightOfBox: 150px;
+@borderColor: #dedede;
 .nav-boxes{
 	.column(12);
 	height: @heightOfBox;
-	color:pink;
-	background:red;
+	background:white;
 	border: solid 4px;
+	border-color: @borderColor;
 }
 .nav-boxes,
 .box_shadow {
-  -webkit-box-shadow: 0px 0px 12px 0px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-     -moz-box-shadow: 0px 0px 12px 0px #000; /* FF3.5 - 3.6 */
-          box-shadow: 0px 0px 12px 0px #000; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+  -webkit-box-shadow: 0px 0px 12px 0px @borderColor; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 0px 0px 12px 0px @borderColor; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 12px 0px @borderColor; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
 }
 
 .nav-boxes,
@@ -27,13 +31,25 @@
   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
-.about{
-	.column(4);
-	border-right: 4px solid;
-	height: @heightOfBox;
-}
-.services{
-	.column(4);
-	border-right: 4px solid;
-	height: @heightOfBox;	
+.nav-boxes{
+	position: relative;
+
+	.services,
+	.clients,
+	.about{
+		.column(4);
+		border-right: 4px solid;
+		height: @heightOfBox;
+		border-color: @borderColor;
+	}
+	.clients{
+		border: none;
+		.column(3);
+	}
+
+	div{
+		position: absolute;
+		bottom: 20px;
+		color: blue;
+	}
 }
