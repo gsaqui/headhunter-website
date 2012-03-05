@@ -58,6 +58,9 @@ body:after {
   height: 150px;
   border-color: #dedede;
 }
+.nav-boxes .services a, .nav-boxes .clients a, .nav-boxes .about a {
+  color: pink;
+}
 .nav-boxes .clients {
   border: none;
   display: inline;
