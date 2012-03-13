@@ -1,12 +1,9 @@
-@import "bootstrap/buttons.less"
 @import "grid.less";
 @import "constants.less";
 @import "header.less";
 
-
-
-
 @import "homepage-buttons.less";
+@import "homepage-form.less";
 @import "joinUs.less";
 
 
@@ -52,6 +49,15 @@ header h1{
 	width: 350px;
 }
 
+body{
+	background: @backgroundColor ;
+	background-image: -moz-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: -ms-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: -o-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: -webkit-radial-gradient(25% 30%, silver, @backgroundColor);
+	background-image: radial-gradient(25% 30%, silver, @backgroundColor);
+	background-repeat: no-repeat;
+}
 
 .main{
 	xbackground: @backgroundColor ;
@@ -67,6 +73,21 @@ header h1{
 
 .main p{
 	color: black;
+}
+
+@borderColor: #dedede;
+.contents{
+	background-color: white;
+	.clearfix();
+	border: solid 4px;
+	border-color: @borderColor;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	
+	h2{
+		text-shadow: 1px 1px 3px #888;
+	}
+
 }
 
 .left-column {

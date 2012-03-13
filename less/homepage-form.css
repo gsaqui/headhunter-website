@@ -28,6 +28,7 @@ body:after {
 body:after {
   clear: both;
 }
+/*http://www.colourlovers.com/palette/443995/i_demand_a_pancake*/
 /*!
  * Bootstrap v2.0.1
  *
@@ -3809,197 +3810,26 @@ a.thumbnail:hover {
 .invisible {
   visibility: hidden;
 }
-.nav-boxes {
+.join-us .contact-info label,
+.join-us .contact-info input {
   display: inline;
   float: left;
-  width: 940px;
+  width: 380px;
   margin: 0 10px;
   display: inline;
   float: left;
-  width: 940px;
+  width: 380px;
   margin: 0 10px;
-  height: 150px;
-  background: white;
-  border: solid 4px;
-  border-color: #dedede;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
-.nav-boxes,
-.box_shadow {
-  -webkit-box-shadow: 0px 0px 12px 0px #dedede;
-  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-
-  -moz-box-shadow: 0px 0px 12px 0px #dedede;
-  /* FF3.5 - 3.6 */
-
-  box-shadow: 0px 0px 12px 0px #dedede;
-  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
-
-}
-.nav-boxes,
-.box_round {
-  -webkit-border-radius: 12px;
-  /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
-
-  -moz-border-radius: 12px;
-  /* FF1-3.6 */
-
-  border-radius: 12px;
-  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-
-  /* useful if you don't want a bg color from leaking outside the border: */
-
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.nav-boxes {
-  position: relative;
-}
-.nav-boxes .services,
-.nav-boxes .clients,
-.nav-boxes .about {
+.join-us .contact-info .submit {
+  margin-top: 15px;
   display: inline;
   float: left;
-  width: 300px;
+  width: 140px;
   margin: 0 10px;
   display: inline;
   float: left;
-  width: 300px;
+  width: 140px;
   margin: 0 10px;
-  border-right: 4px solid;
-  height: 150px;
-  border-color: #dedede;
-}
-.nav-boxes .services a,
-.nav-boxes .clients a,
-.nav-boxes .about a {
-  display: inline-block;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  font-size: 13px;
-  line-height: 18px;
-  color: #333333;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(top, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: 1px solid #ccc;
-  border-bottom-color: #bbb;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  *margin-left: .3em;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-  background-color: #5bb75b;
-  background-image: -moz-linear-gradient(top, #62c462, #51a351);
-  background-image: -ms-linear-gradient(top, #62c462, #51a351);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
-  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
-  background-image: -o-linear-gradient(top, #62c462, #51a351);
-  background-image: linear-gradient(top, #62c462, #51a351);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
-  border-color: #51a351 #51a351 #387038;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  font-weight: bold;
-  text-transform: none;
-  text-decoration: none;
-}
-.nav-boxes .services a:hover,
-.nav-boxes .clients a:hover,
-.nav-boxes .about a:hover,
-.nav-boxes .services a:active,
-.nav-boxes .clients a:active,
-.nav-boxes .about a:active,
-.nav-boxes .services a.active,
-.nav-boxes .clients a.active,
-.nav-boxes .about a.active,
-.nav-boxes .services a.disabled,
-.nav-boxes .clients a.disabled,
-.nav-boxes .about a.disabled,
-.nav-boxes .services a[disabled],
-.nav-boxes .clients a[disabled],
-.nav-boxes .about a[disabled] {
-  background-color: #e6e6e6;
-}
-.nav-boxes .services a:active,
-.nav-boxes .clients a:active,
-.nav-boxes .about a:active,
-.nav-boxes .services a.active,
-.nav-boxes .clients a.active,
-.nav-boxes .about a.active {
-  background-color: #cccccc \9;
-}
-.nav-boxes .services a:first-child,
-.nav-boxes .clients a:first-child,
-.nav-boxes .about a:first-child {
-  *margin-left: 0;
-}
-.nav-boxes .services a:hover,
-.nav-boxes .clients a:hover,
-.nav-boxes .about a:hover,
-.nav-boxes .services a:active,
-.nav-boxes .clients a:active,
-.nav-boxes .about a:active,
-.nav-boxes .services a.active,
-.nav-boxes .clients a.active,
-.nav-boxes .about a.active,
-.nav-boxes .services a.disabled,
-.nav-boxes .clients a.disabled,
-.nav-boxes .about a.disabled,
-.nav-boxes .services a[disabled],
-.nav-boxes .clients a[disabled],
-.nav-boxes .about a[disabled] {
-  background-color: #51a351;
-}
-.nav-boxes .services a:active,
-.nav-boxes .clients a:active,
-.nav-boxes .about a:active,
-.nav-boxes .services a.active,
-.nav-boxes .clients a.active,
-.nav-boxes .about a.active {
-  background-color: #408140 \9;
-}
-.nav-boxes .services a .caret,
-.nav-boxes .clients a .caret,
-.nav-boxes .about a .caret {
-  border-top-color: #ffffff;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-}
-.nav-boxes .clients {
-  border: none;
-  display: inline;
-  float: left;
-  width: 220px;
-  margin: 0 10px;
-  display: inline;
-  float: left;
-  width: 220px;
-  margin: 0 10px;
-}
-.nav-boxes div {
-  position: absolute;
-  bottom: 20px;
-  color: blue;
 }

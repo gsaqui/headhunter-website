@@ -2,7 +2,8 @@ body {
   width: 100%;
   *zoom: 1;
 }
-body:before, body:after {
+body:before,
+body:after {
   content: "";
   display: table;
 }
@@ -15,10 +16,16 @@ body:after {
   float: left;
   width: 460px;
   margin: 0 10px;
-  background-color: pink;
+  background-color: white;
 }
 .join-us h2 {
   text-align: left;
-  text-shadow: 1px 1px 3px #888;
-  color: #1669a1;
+  color: black;
+}
+.company-info {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  background-color: white;
 }
