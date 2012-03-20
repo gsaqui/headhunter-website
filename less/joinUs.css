@@ -21,6 +21,10 @@ body:after {
 .join-us h2 {
   text-align: left;
   color: black;
+  margin-left: 10px;
+}
+.join-us p {
+  margin: 0 5px 15px 10px;
 }
 .company-info {
   display: inline;

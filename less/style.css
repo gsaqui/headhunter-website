@@ -103,6 +103,11 @@ header #captain {
   font-size: 18px;
   text-align: center;
 }
+header #hr {
+  bottom: 186px;
+  left: 348px;
+  font-size: 24px;
+}
 header #dream {
   bottom: 80px;
   right: 357px;
@@ -12853,6 +12858,10 @@ body:after {
 .join-us h2 {
   text-align: left;
   color: black;
+  margin-left: 10px;
+}
+.join-us p {
+  margin: 0 5px 15px 10px;
 }
 .company-info {
   display: inline;
