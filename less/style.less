@@ -1,3 +1,5 @@
+
+@import "mixins.less";
 @import "grid.less";
 @import "constants.less";
 @import "header.less";
@@ -91,13 +93,40 @@ body{
 
 }
 
+.city{
+	background-image: url('../img/city.jpg');
+	height: 95px;
+	margin-top: 90px;
+	margin-bottom: 20px;
+}
+h1.candidate{
+	font-size: 30px;
+	margin-left:25px;
+}
+
 .container .extra-info{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	background-color: rgba(15, 15, 15, .5);
 
-	padding: 5px;
+	padding: 15px;
+
+
+    form.contact-info{
+
+		h2{
+			color: white;
+		}
+		label{
+			color: #F2F0DF
+		}
+		input[type=file]{
+			color:pink;
+
+		}
+	}
+	
 }
 
 
