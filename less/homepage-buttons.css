@@ -2684,6 +2684,7 @@ button.btn.small, input[type="submit"].btn.small {
 }
 .navbar .nav {
   position: relative;
+  width: 400px;
   left: 0;
   display: block;
   float: left;

@@ -2,8 +2,7 @@ body {
   width: 100%;
   *zoom: 1;
 }
-body:before,
-body:after {
+body:before, body:after {
   content: "";
   display: table;
 }
