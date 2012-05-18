@@ -20,13 +20,16 @@ h1{
 }
 
 nav{
-	width: @totalWidth;
+	xwidth: @totalWidth;
 	height: 50px;
 	float: left;
 	background: @darkGradient;
 	background: -webkit-linear-gradient(90deg, @darkGradient, @lightGradient);
 	background: -moz-linear-gradient(90deg, @darkGradient, @lightGradient);
 	background: -o-linear-gradient(90deg, @darkGradient, @lightGradient);
+}
+.navbar .nav{
+	width: 650px;
 }
 ul.nav{
 	float: left;
@@ -60,6 +63,10 @@ body{
 	background-image: -webkit-radial-gradient(25% 30%, silver, @backgroundColor);
 	background-image: radial-gradient(25% 30%, silver, @backgroundColor);
 	background-repeat: no-repeat;
+}
+
+body.no-cssgradients{
+	background: #787878 ;
 }
 
 .main{

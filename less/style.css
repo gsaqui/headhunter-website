@@ -1940,12 +1940,14 @@ body:after{clear:both;}
 .company-info{display:inline;float:left;width:460px;margin:0 10px;display:inline;float:left;width:460px;margin:0 10px;display:inline;float:left;width:460px;margin:0 10px;display:inline;float:left;width:460px;margin:0 10px;display:inline;float:left;width:460px;margin:0 10px;display:inline;float:left;width:460px;margin:0 10px;background-color:white;}.company-info h2{margin-bottom:5px;}
 body{width:960px;margin:0 auto;font-size:16px;}
 h1{color:#f2f0df;}
-nav{width:960px;height:50px;float:left;background:#594f4f;background:-webkit-linear-gradient(90deg, #594f4f, #000000);background:-moz-linear-gradient(90deg, #594f4f, #000000);background:-o-linear-gradient(90deg, #594f4f, #000000);}
+nav{xwidth:960px;height:50px;float:left;background:#594f4f;background:-webkit-linear-gradient(90deg, #594f4f, #000000);background:-moz-linear-gradient(90deg, #594f4f, #000000);background:-o-linear-gradient(90deg, #594f4f, #000000);}
+.navbar .nav{width:650px;}
 ul.nav{float:left;display:block;padding-top:.15em;list-style:none;width:960px;}
 ul.nav li{float:left;display:inline;margin-right:20px;}
 ul.nav a{color:#f2f0df;text-decoration:none;}
 header h1{position:absolute;top:40px;left:15px;width:350px;}
 body{background:#222222;background-image:-moz-radial-gradient(25% 30%, #c0c0c0, #222222);background-image:-ms-radial-gradient(25% 30%, #c0c0c0, #222222);background-image:-o-radial-gradient(25% 30%, #c0c0c0, #222222);background-image:-webkit-radial-gradient(25% 30%, #c0c0c0, #222222);background-image:radial-gradient(25% 30%, #c0c0c0, #222222);background-repeat:no-repeat;}
+body.no-cssgradients{background:#787878 ;}
 .main{xbackground:#222222;xbackground-image:-moz-radial-gradient(25% 30%, #c0c0c0, #222222);xbackground-image:-ms-radial-gradient(25% 30%, #c0c0c0, #222222);xbackground-image:-o-radial-gradient(25% 30%, #c0c0c0, #222222);xbackground-image:-webkit-radial-gradient(25% 30%, #c0c0c0, #222222);xbackground-image:radial-gradient(25% 30%, #c0c0c0, #222222);xbackground-repeat:no-repeat;position:relative;float:left;}
 .main p{color:black;}
 .contents{background-color:white;*zoom:1;*zoom:1;*zoom:1;*zoom:1;*zoom:1;*zoom:1;*zoom:1;*zoom:1;*zoom:1;border:solid 3px;border-color:#dedede;margin-bottom:30px;padding-bottom:20px;}.contents:before,.contents:after{display:table;content:"";}
