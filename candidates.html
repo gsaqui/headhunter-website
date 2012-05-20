@@ -63,17 +63,34 @@
 		
 		  <h2>Send us your CV</h2>
 			<div class="span12">
-			<form class="contact-info">
 			
-			  <label>Name</label>
-			  <input type="text" placeholder="Your name">
-			  <label>Email</label>
-			  <input type="email" placeholder="Email">
-			  <label>Phone number</label>
-			  <input type="tel" placeholder="Phone number">
-			  <label>CV</label>
-			  <input type="file" name="filechooser" size="10"></input>
 
+			<form class="contact-info form-horizontal">
+			  <div class="control-group">
+			    <label class="control-label" for="name">Name</label>
+			    <div class="controls">
+			      <input type="text" id="name" placeholder="Your name">
+			    </div>  
+			   </div> 
+			   <div class="control-group">
+			    <label class="control-label" for="email">Email</label>
+			    <div class="controls">
+			      <input type="email" placeholder="Email" id="email">
+			    </div>  
+			   </div>	
+			   <div class="control-group">
+			    <label class="control-label" for="phone-number">Phone number</label>
+			    <div class="controls">
+			      <input type="tel" placeholder="Phone number" id="phone-number">
+			    </div>  
+			   </div>
+			   <div class="control-group">
+			    <label class="control-label" for="cv">CV</label>
+			    <div class="controls">
+			      <input type="file" name="cv" id="cv" size="10"></input>
+			    </div>  
+			   </div>			
+			  
 			  <button type="submit" class="submit btn">Submit</button>
 			</form>
 

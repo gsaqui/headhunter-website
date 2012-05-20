@@ -61,19 +61,32 @@
 	   <p>Please complete the form below and one of agents will email you shortly.</p>
 		
 			<div class="span12">
-			<form class="contact-info form-horizontal">
+			<form class="contact-info form-horizontal" action="/contactUs/data" method="get">
 			  <div class="control-group">
 			    <label class="control-label" for="name">Name</label>
 			    <div class="controls">
-			      <input type="text" id="name" placeholder="Your name">
+			      <input type="text" id="name" name="name" placeholder="Your name">
 			    </div>  
 			   </div> 
-			  <label>Email</label>
-			  <input type="email" placeholder="Email">
-			  <label>Phone number</label>
-			  <input type="tel" placeholder="Phone number">
-			  <label>Message</label>
-			  <textarea></textarea>
+			   <div class="control-group">
+			    <label class="control-label" for="email">Email</label>
+			    <div class="controls">
+			      <input type="email" placeholder="Email" name="email" id="email">
+			    </div>  
+			   </div>	
+			   <div class="control-group">
+			    <label class="control-label" for="phone-number">Phone number</label>
+			    <div class="controls">
+			      <input type="tel" placeholder="Phone number" name="phone-number" id="phone-number">
+			    </div>  
+			   </div>
+			   <div class="control-group">
+			    <label class="control-label" for="message">Message</label>
+			    <div class="controls">
+			      <textarea id="message" name="message" ></textarea>
+			    </div>  
+			   </div>			
+			  
 			  <button type="submit" class="submit btn">Submit</button>
 			</form>
 
@@ -92,6 +105,7 @@
     </div> <!-- /container -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="http://cdn.sockjs.org/sockjs-0.2.1.min.js"></script>
 
 <script src="js/libs/bootstrap/transition.js"></script>
 <script src="js/libs/bootstrap/collapse.js"></script>

@@ -1,0 +1,4 @@
+{
+  "main": "com.headhunter.WebServer",
+  "worker": true
+}
