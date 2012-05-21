@@ -1,4 +1,5 @@
 import org.vertx.groovy.core.http.RouteMatcher
+import groovy.json.*
 
 String webRootPrefix = ".."
 
@@ -53,6 +54,13 @@ server.requestHandler{ req ->
 		println "  - $k=$v"
 	}
 
+	req.dataHandler{ data ->
+	    println 'we got some data -'+data
+	    def json = new JsonSlurper().parseText(data.toString())
+	    json.each{ k, v ->
+	    	       println " -> $k = $v"
+		       }
+	}
 	
   	if(req.method == "GET"){
 		if(req.uri == '/'){
@@ -65,12 +73,6 @@ server.requestHandler{ req ->
 		req.response.end "thanks dude"
 	}	
 }
-// The handler for the SockJS app - we just echo data back
-vertx.createSockJSServer(server).installApp(prefix: '/socks') { sock ->
-  sock.dataHandler { buff ->
-	println buff[0]
-    sock << buff
-  }
-}
 
-server.listen(8080, "localhost")
+
+server.listen(8080, "0.0.0.0")
