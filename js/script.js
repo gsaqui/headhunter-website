@@ -1,4 +1,4 @@
-$('.submit').click(function(event){
+$('.xsubmit').click(function(event){
     /* stop form from submitting normally */
     event.preventDefault();
   
@@ -12,8 +12,9 @@ $('.submit').click(function(event){
     $.ajax({
 	url:"/contactUs/data",  
 	type: 'POST',
-	data: JSON.stringify(obj),
-	dataType: 'json',
+	data: $('form').serialize(),
+//	data: JSON.stringify(obj),
+//	dataType: 'json',
 	success: function(data) {
          alert("Data Loaded: " + data);
 	}

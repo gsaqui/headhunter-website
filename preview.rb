@@ -1,4 +1,11 @@
 require 'webrick'
+require 'stringio'
+
+require 'fcntl'
+
+require 'time'
+
+include WEBrick
 class NonCachingFileHandler < WEBrick::HTTPServlet::FileHandler
   def prevent_caching(res)
     res['ETag']          = nil
@@ -15,7 +22,34 @@ class NonCachingFileHandler < WEBrick::HTTPServlet::FileHandler
 
 end
 
+class FileUploadServlet < HTTPServlet::AbstractServlet
+    def do_POST(req, res)
+
+      name = req.query['name'].gsub(' ', '-')
+
+      uploadedFileName = name + '-file-' + req.query["upload"].filename
+      filedata= req.query["upload"]
+
+
+      open('emailsFromClients/'+name+'.properties', 'a') do |file|
+        req.query().each{ |key, value|
+          if key != 'upload' && value
+            file.puts key +' = '+ value 
+          end
+        }
+      end
+
+
+      f = File.open('emailsFromClients/'+uploadedFileName, "wb")
+      f.syswrite filedata
+      f.close
+
+  end
+end
+
 server = WEBrick::HTTPServer.new :Port => 1234
 server.mount "/", NonCachingFileHandler , './'
+server.mount("/upload", FileUploadServlet)
+
 trap('INT') { server.stop }
 server.start
