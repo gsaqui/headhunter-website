@@ -21,86 +21,52 @@
 
 <body>
 
-
 <g:render template="/templates/nav" model="[selected:'home']"/>
+<div class="container">
 
-<div class="main">
-
-    <header>
-        <img src="images/top-of-site.png">
-
-    </header>
-
-    <h1 class="message">We deliver the dreams others dream they could deliver</h1>
-
-
-    <div class="contents">
-        <section class="nav-boxes">
-            <section class="about">
-                <h2>About</h2>
-
-                <p>Learn more about the company that taking the head hunting world by storm.</p>
-
-                <div>Learn <a href="/about.html">More</a></div>
-            </section>
-            <section class="services">
-                <h2>Candidate</h2>
-
-                <p>If you have been contacted and would like to send us an updated cv o.</p>
-
-                <div>Learn <a href="/candidates.html">More</a></div>
-            </section>
-            <section class="clients">
-                <h2>Clients</h2>
-
-                <p>Login into your account to find out how our search is progressing.</p>
-
-                <div>Learn <a href="clients.html">More</a></div>
-            </section>
-        </section>
-
-        <section class="join-us">
-            <h2>Join Us</h2>
-
-            <p>If you are interested in engaging our headhunting or advisory services, please complete the form
-            below and one of our specialists will make contact with you to discuss your requirements in more
-            detail.</p>
-
-            <form class="contact-info">
-                <label>Name</label>
-                <input type="text" placeholder="Your name">
-                <label>Email</label>
-                <input type="email" placeholder="Email">
-                <label>Phone number</label>
-                <input type="tel" placeholder="Phone number">
-
-                <button type="submit" class="submit btn">Submit</button>
-            </form>
-
-        </section>
-        <section class="company-info">
-            <h2>Need to put something here</h2>
-
-            <p>Sarah Cavendish Consulting was established in 1995 to cater for the ever increasing need for fast and efficient search and
-            selection consultants and outstanding complimentary advisory services. We have made it our
-            business to understand the social and financial issues that face your business on a daily basis and
-            have developed a clear strategy to deliver results.</p>
-
-            <p>Sarah Cavendish Consulting was established in 1995 to cater for the ever increasing need for fast and efficient search and
-            selection consultants and outstanding complimentary advisory services. We have made it our
-            business to understand the social and financial issues that face your business on a daily basis and
-            have developed a clear strategy to deliver results.</p>
-
-        </section>
-
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit city">
     </div>
-</div>
 
-<hr>
+    <h1 class="message candidate">We deliver the dreams others dream they could deliver.</h1>
 
-<footer>
-    <p>&copy; Sarah Cavendish 2012</p>
-</footer>
+    <div class="extra-info row">
+        <div class="span12">
+            <h2>About Us</h2>
+
+            <p>Sarah Cavendish was established in 1995 to cater for the ever increasing need for fast and efficient search and
+            selection consultants and outstanding complimentary advisory services. We have made it our
+            business to understand the social and financial issues that face your business on a daily basis and
+            have developed a clear strategy to deliver results.</p>
+
+            <p>Unlike other consultants we are not based in any location and prefer to keep our consultants moving
+            around Europe, the Middle East and Asia to ensure they regularly engage with the type of individuals
+            you are consistently looking for and stay ahead of the curve. They are also better placed to maintain
+            memberships to societies and organisations that will compliment the search and selection process.</p>
+
+            <p>Unlike other consultants are team is required to complete their own research to ensure they fully
+            understand each level of the engagement. We do not allow them to pass this crucial part of the
+            process to a more junior member of staff.</p>
+
+            <p>At Sarah Cavendish we never allow our consultants to handle more than three engagements at any one time to
+            ensure each of our consultants is focused to find you high performing individuals through hard work
+            and diligence, rather than luck... every time!</p>
+
+            <p>Without the need for expensive office and reception overheads, Sarah Cavendish offer industry leading
+            introduction rates from as low as 5% to a maximum of 15% depending on the engagement level.
+            Working purely through interactive media and point to point technologies you will find our team
+            always ready to help. Contact us by email and we’ll make it easy to stay in contact.</p>
+        </div>
+    </div>
+    <h1 class="message candidate">whilst the City sleeps Sarah Cavendish is doing everything but</h1>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Sarah Cavendish 2012</p>
+    </footer>
+
+</div> <!-- /container -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
