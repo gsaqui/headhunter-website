@@ -1,0 +1,67 @@
+@import "grid.less";
+@import "bootstrap.less";
+
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+@heightOfBox: 150px;
+@borderColor: #dedede;
+.nav-boxes{
+	.column(12);
+	height: @heightOfBox;
+	background:white;
+	border: solid 4px;
+	border-color: @borderColor;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.nav-boxes,
+.box_shadow {
+  -webkit-box-shadow: 0px 0px 12px 0px @borderColor; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 0px 0px 12px 0px @borderColor; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 12px 0px @borderColor; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+
+.nav-boxes,
+.box_round {
+
+  -webkit-border-radius: 12px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+     -moz-border-radius: 12px; /* FF1-3.6 */
+          border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+.nav-boxes{
+	position: relative;
+
+	.services,
+	.clients,
+	.about{
+		.column(4);
+		border-right: 4px solid;
+		height: @heightOfBox;
+		border-color: @borderColor;
+		
+		a{
+			.btn();
+			.btn-success;
+			font-weight: bold;
+			text-transform: none;
+			text-decoration: none;
+		}
+		
+	}
+	.clients{
+		border: none;
+		.column(3);
+	}
+
+	div{
+		position: absolute;
+		bottom: 20px;
+		color: blue;
+	}
+}

@@ -44,6 +44,7 @@ class FileUploadServlet < HTTPServlet::AbstractServlet
       f.syswrite filedata
       f.close
 
+      res.set_redirect(WEBrick::HTTPStatus::MovedPermanently,"http://www.google.com")
   end
 end
 

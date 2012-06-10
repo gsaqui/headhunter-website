@@ -1,0 +1,45 @@
+header {
+  position: relative;
+  float: left;
+  margin-top: 38px;
+}
+header h3 {
+  position: absolute;
+  font-size: 30px;
+  width: 50px;
+  line-height: 1.1;
+  margin: 0;
+  text-align: center;
+}
+header #ceo {
+  top: 34px;
+  left: 88px;
+  font-size: 28px;
+}
+header #accounts {
+  top: 48px;
+  left: 536px;
+  font-size: 16px;
+  text-align: center;
+}
+header #captain {
+  top: 118px;
+  right: 189px;
+  font-size: 18px;
+  text-align: center;
+}
+header #hr {
+  bottom: 186px;
+  left: 348px;
+  font-size: 24px;
+}
+header #dream {
+  bottom: 80px;
+  right: 357px;
+}
+.message {
+  font-size: 34px;
+  line-height: 1.1;
+  margin: 0 0 20px 55px;
+  text-shadow: 1px 1px 3px #888;
+}
