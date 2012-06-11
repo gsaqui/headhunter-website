@@ -8,6 +8,9 @@
 @import "homepage-form.less";
 @import "joinUs.less";
 
+html{
+        height: 100%;
+}
 
 body{
 	width: @totalWidth;
@@ -24,12 +27,20 @@ nav{
 	height: 50px;
 	float: left;
 	background: @darkGradient;
-	background: -webkit-linear-gradient(90deg, @darkGradient, @lightGradient);
-	background: -moz-linear-gradient(90deg, @darkGradient, @lightGradient);
-	background: -o-linear-gradient(90deg, @darkGradient, @lightGradient);
+	xbackground: -webkit-linear-gradient(90deg, @darkGradient, @lightGradient);
+	xbackground: -moz-linear-gradient(90deg, @darkGradient, @lightGradient);
+	xbackground: -o-linear-gradient(90deg, @darkGradient, @lightGradient);
+
+
+background-image: linear-gradient(bottom, rgb(67,67,67) 19%, rgb(139,139,139) 84%);
+background-image: -o-linear-gradient(bottom, rgb(67,67,67) 19%, rgb(139,139,139) 84%);
+background-image: -moz-linear-gradient(bottom, rgb(67,67,67) 19%, rgb(139,139,139) 84%);
+background-image: -webkit-linear-gradient(bottom, rgb(67,67,67) 19%, rgb(139,139,139) 84%);
+background-image: -ms-linear-gradient(bottom, rgb(67,67,67) 19%, rgb(139,139,139) 84%)
+
 }
 .navbar .nav{
-	width: 665px;
+	width: 656px;
 }
 ul.nav{
 	float: left;
