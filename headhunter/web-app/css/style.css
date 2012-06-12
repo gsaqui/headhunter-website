@@ -18892,6 +18892,9 @@ body:after {
 .company-info h2 {
   margin-bottom: 5px;
 }
+html {
+  height: 100%;
+}
 body {
   width: 960px;
   margin: 0 auto;
@@ -18901,7 +18904,6 @@ h1 {
   color: #f2f0df;
 }
 nav {
-  xwidth: 960px;
   height: 50px;
   float: left;
   background: #594f4f;
@@ -18910,7 +18912,7 @@ nav {
   background: -o-linear-gradient(90deg, #594f4f, #000000);
 }
 .navbar .nav {
-  width: 665px;
+  width: 656px;
 }
 ul.nav {
   float: left;
@@ -18928,6 +18930,10 @@ ul.nav a {
   color: #f2f0df;
   text-decoration: none;
 }
+ul.nav li a {
+  font-size: 15px;
+  line-height: 15px;
+}
 header h1 {
   position: absolute;
   top: 40px;
@@ -18935,13 +18941,13 @@ header h1 {
   width: 350px;
 }
 body {
-  background: #222222;
-  background-image: -moz-radial-gradient(25% 30%, #c0c0c0, #222222);
-  background-image: -ms-radial-gradient(25% 30%, #c0c0c0, #222222);
-  background-image: -o-radial-gradient(25% 30%, #c0c0c0, #222222);
-  background-image: -webkit-radial-gradient(25% 30%, #c0c0c0, #222222);
-  background-image: radial-gradient(25% 30%, #c0c0c0, #222222);
+  background: #434343;
   background-repeat: no-repeat;
+  background-image: linear-gradient(bottom, #434343 19%, #8b8b8b 84%);
+  background-image: -o-linear-gradient(bottom, #434343 19%, #8b8b8b 84%);
+  background-image: -moz-linear-gradient(bottom, #434343 19%, #8b8b8b 84%);
+  background-image: -webkit-linear-gradient(bottom, #434343 19%, #8b8b8b 84%);
+  background-image: -ms-linear-gradient(bottom, #434343 19%, #8b8b8b 84%);
 }
 body.no-cssgradients {
   background: #787878 ;
